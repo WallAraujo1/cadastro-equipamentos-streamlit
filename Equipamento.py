@@ -78,7 +78,7 @@ with aba_cadastro:
             imagem_bytes = imagem_file.read() if imagem_file else None
             salvar_dados(equipamento, data_hora, matricula, nome, status, obs, imagem_bytes)
             st.success("Dados salvos com sucesso!")
-            st.experimental_rerun()
+            st.rerun()
         else:
             st.warning("Preencha pelo menos o nome e o equipamento.")
 
